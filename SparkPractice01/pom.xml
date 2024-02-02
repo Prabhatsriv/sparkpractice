@@ -4,19 +4,22 @@
   <artifactId>SparkPractice01</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  <dependency>
+
+
+	<dependency>
     <groupId>org.apache.spark</groupId>
-    <artifactId>spark-core_2.11</artifactId>
-    <version>2.4.4</version>
-  </dependency>
+    <artifactId>spark-core_2.12</artifactId>
+    <version>2.4.3</version>
+	</dependency>
   
 
-  <dependency>
+	<dependency>
     <groupId>org.apache.spark</groupId>
-    <artifactId>spark-sql_2.11</artifactId>
-    <version>2.4.4</version>
+    <artifactId>spark-sql_2.12</artifactId>
+    <version>2.4.3</version>
     <scope>provided</scope>
-  </dependency>
+	</dependency>
+  
   
   </dependencies>
 </project>

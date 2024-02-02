@@ -9,7 +9,7 @@ import org.apache.spark.rdd
 
 object hire {
   
-  def main(args:Array[String]):Unit = { 
+  def main(args:Array[String]) { 
     
   /* Hire Candidate
    * Hire the candidates who fall under budget of 70000 according to below criteria:
