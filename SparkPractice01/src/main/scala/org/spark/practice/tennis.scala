@@ -9,7 +9,7 @@ object tennis {
  * Find out the total matches wins by each player in each year
  */
     
-    val spark = SparkSession.builder().master("local[1]").appName("day01").getOrCreate()
+    val spark = SparkSession.builder().master("local[1]").appName("tennisCode").getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     
     val player_data = Seq((1,"Nadal"),(2,"Federer"),(3,"Novak"))

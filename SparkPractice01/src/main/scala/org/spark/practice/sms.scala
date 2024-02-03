@@ -7,7 +7,7 @@ object sms {
 
   def main(args: Array[String]) {
 
-    val spark: SparkSession = SparkSession.builder().appName("sms").master("local[*]").getOrCreate()
+    val spark: SparkSession = SparkSession.builder().appName("smsCode").master("local[*]").getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
 
     /*
@@ -17,10 +17,12 @@ object sms {
                                      .add("sender",StringType,true)
                                      .add("receiver",StringType,true)
                                      .add("sms_no",IntegerType,true)
+                                    
+    val infile = args(0)
     val input_data = spark.read.format("csv")
                                .option("header", "true")
                                .schema(sms_schema)
-                               .load("file:///D:/spark/spark_scala_question/sms_data.csv")
+                               .load(infile)
 
     println("======== input sms data and schema ==========")
     input_data.printSchema()
