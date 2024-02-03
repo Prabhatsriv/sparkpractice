@@ -4,19 +4,35 @@
   <artifactId>SparkPractice01</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  <dependency>
-    <groupId>org.apache.spark</groupId>
-    <artifactId>spark-core_2.11</artifactId>
-    <version>2.4.4</version>
-  </dependency>
+
+
+	<dependency>
+     <groupId>org.apache.spark</groupId>
+     <artifactId>spark-core_2.11</artifactId>
+     <version>2.4.7</version>
+	</dependency>
   
 
-  <dependency>
-    <groupId>org.apache.spark</groupId>
-    <artifactId>spark-sql_2.11</artifactId>
-    <version>2.4.4</version>
-    <scope>provided</scope>
-  </dependency>
+	<dependency>
+     <groupId>org.apache.spark</groupId>
+     <artifactId>spark-sql_2.11</artifactId>
+     <version>2.4.7</version>
+     <scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+     <groupId>org.apache.hadoop</groupId>
+     <artifactId>hadoop-client</artifactId>
+     <version>2.7.0</version>
+	</dependency>
+
+
+	<dependency>
+     <groupId>com.twitter</groupId>
+     <artifactId>chill_2.11</artifactId>
+     <version>0.9.4</version>
+	</dependency>
+  
   
   </dependencies>
 </project>
