@@ -16,7 +16,7 @@ object hire {
    * First hire Senior within budget then hire Junior within remaining budget.
    */
    
-    val spark:SparkSession = SparkSession.builder().appName("hire").master("local[*]").getOrCreate()
+    val spark:SparkSession = SparkSession.builder().appName("hireCode").master("local[*]").getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     
     val data = Seq(Row(1,"junior",10000),Row(1,"junior",15000),Row(1,"junior",40000),

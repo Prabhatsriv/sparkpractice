@@ -6,7 +6,7 @@ object pivot {
   
   def main(args: Array[String]){ 
     
-    val spark = SparkSession.builder().appName("pivotjob").master("local[*]").getOrCreate()
+    val spark = SparkSession.builder().appName("pivotCode").master("local[*]").getOrCreate()
     
     println(spark)
     
